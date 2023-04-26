@@ -23,5 +23,10 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello Neha is here
+      - say-hello 
       
+steps:
+      - checkout
+      - run:
+          name: "Say hello"
+          command: "echo Hello, Neha is here!"
